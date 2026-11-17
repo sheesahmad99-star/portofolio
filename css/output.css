@@ -251,6 +251,9 @@
   .inline-flex {
     display: inline-flex;
   }
+  .table {
+    display: table;
+  }
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
@@ -269,8 +272,14 @@
   .min-w-0 {
     min-width: 0px;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .resize {
+    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -343,6 +352,9 @@
   }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .bg-\[url\(\'\.\.\/images\/sfeerbeeld_1\.jpg\'\)\] {
+    background-image: url('../images/sfeerbeeld_1.jpg');
   }
   .bg-cover {
     background-size: cover;
@@ -451,6 +463,10 @@
   }
   .bg-blend-multiply {
     background-blend-mode: multiply;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   :is(:where(.peer):checked ~ .peer-checked\:block) {
     display: block;
@@ -574,9 +590,6 @@
 body {
   background-color: #f8fafc;
   font-family: "Poppins", sans-serif;
-}
-.hero {
-  background-image: url("../images/sfeerbeeld_1.jpg");
 }
 @property --tw-border-style {
   syntax: "*";
