@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Ibrahimi Ahmad</title>
+    <meta name="description" content="Neem contact op met Ibrahimi Ahmad, student Systeem- en Netwerkbeheer aan AP Hogeschool, voor vragen over projecten of stages.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/output.css">
+</head>
+<body>
+    <a href="#inhoud" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 bg-white text-blue-700 px-4 py-2 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">Ga naar de inhoud</a>
+
+    <div class="max-w-6xl mx-auto px-4">
+        <header class="py-4 border-b border-gray-200">
+            <div class="flex flex-wrap items-center justify-between gap-4">
+                <div class="flex items-center gap-4">
+                    <img src="images/logo.jpg" alt="IA-logo" width="64" height="64">
+                    <span class="text-xl font-semibold">Ibrahimi Ahmad</span>
+                </div>
+
+                <input type="checkbox" id="menu-toggle" class="peer sr-only">
+                <label for="menu-toggle" class="md:hidden cursor-pointer border border-gray-400 rounded-lg px-4 py-2 hover:bg-gray-100 peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-blue-700">Menu</label>
+
+                <nav class="hidden peer-checked:block md:block w-full md:w-auto" aria-label="Hoofdnavigatie">
+                    <ul class="flex flex-col md:flex-row gap-2 md:gap-4">
+                        <li><a href="index.html" class="block px-3 py-2 rounded-lg hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">Home</a></li>
+                        <li><a href="portfolio.html" class="block px-3 py-2 rounded-lg hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">Portfolio</a></li>
+                        <li><a href="project.html" class="block px-3 py-2 rounded-lg hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">Project</a></li>
+                        <li><a href="contact.html" aria-current="page" class="block px-3 py-2 rounded-lg bg-blue-100 font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main id="inhoud" tabindex="-1" class="py-8">
+            <h1 class="text-4xl font-semibold mb-2">Contact</h1>
+            <p class="mb-6 text-gray-700">Stel je vraag over een stage of een project. Velden met een <span class="text-red-700" aria-hidden="true">*</span> zijn verplicht.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <section class="md:col-span-2 min-w-0">
+                    <h2 class="text-2xl font-semibold mb-4">Neem contact op</h2>
+
+                    <form action="#" method="get" class="flex flex-col gap-4 max-w-2xl">
+                        <div>
+                            <label for="naam" class="block font-medium mb-1">
+                                Naam <span class="text-red-700" aria-hidden="true">*</span>
+                            </label>
+                            <input type="text" id="naam" name="naam" autocomplete="name" required
+                                   class="block w-full rounded-lg border border-gray-400 bg-white px-3 py-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">
+                        </div>
+
+                        <div>
+                            <label for="email" class="block font-medium mb-1">
+                                E-mailadres <span class="text-red-700" aria-hidden="true">*</span>
+                            </label>
+                            <input type="email" id="email" name="email" autocomplete="email" required
+                                   aria-describedby="email-hulp email-fout"
+                                   class="peer block w-full rounded-lg border border-gray-400 bg-white px-3 py-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 user-invalid:border-red-700">
+                            <p id="email-hulp" class="mt-1 text-sm text-gray-600">
+                                Vul een e-mailadres in zoals naam@voorbeeld.be.
+                            </p>
+                            <p id="email-fout" class="hidden peer-user-invalid:block mt-1 text-sm text-red-700">
+                                Dit e-mailadres klopt niet. Vul het in zoals naam@voorbeeld.be.
+                            </p>
+                        </div>
+
+                        <div>
+                            <label for="bericht" class="block font-medium mb-1">
+                                Bericht <span class="text-red-700" aria-hidden="true">*</span>
+                            </label>
+                            <textarea id="bericht" name="bericht" rows="5" required minlength="10"
+                                      aria-describedby="bericht-hulp bericht-fout"
+                                      class="peer block w-full rounded-lg border border-gray-400 bg-white px-3 py-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 user-invalid:border-red-700"></textarea>
+                            <p id="bericht-hulp" class="mt-1 text-sm text-gray-600">
+                                Schrijf minstens tien tekens.
+                            </p>
+                            <p id="bericht-fout" class="hidden peer-user-invalid:block mt-1 text-sm text-red-700">
+                                Je bericht is te kort. Schrijf minstens tien tekens.
+                            </p>
+                        </div>
+
+                        <div>
+                            <button type="submit" class="bg-blue-700 text-white font-semibold rounded-lg px-5 py-2 hover:bg-blue-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">
+                                Verstuur
+                            </button>
+                            <p class="mt-2 text-sm text-gray-600">
+                                Dit formulier is een demonstratie en verstuurt nog geen e-mail.
+                                Ingevulde gegevens verschijnen bij verzenden in de adresbalk.
+                            </p>
+                        </div>
+                    </form>
+                </section>
+
+                <aside class="border border-gray-300 rounded-lg p-4">
+                    <h2 class="text-xl font-semibold mb-4">Contactgegevens</h2>
+                    <p>Naam: Ibrahimi Ahmad</p>
+                    <p>Opleiding: Systeem- en Netwerkbeheer</p>
+                    <p>School: AP Hogeschool</p>
+                </aside>
+            </div>
+        </main>
+
+        <footer class="flex flex-col sm:flex-row sm:justify-between gap-2 border-t border-gray-200 py-4">
+            <p>&copy; 2026 Ibrahimi Ahmad</p>
+            <p>Portfolio – AP Hogeschool</p>
+        </footer>
+    </div>
+</body>
+</html>
